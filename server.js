@@ -8,7 +8,7 @@ app.get('/login', function(req, res) {
 	res.render('template');
 });
 
-app.get('/login-in', function(req, res) {
+app.get('/auth/google', function(req, res) {
 	res.render('log-in-page', {
 		user: {
 		login: req.query.login,
